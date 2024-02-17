@@ -1,223 +1,182 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins';
+
+  font-family: 'poppins';
 }
 
 body {
   width: 100vw;
   height: 100vh;
+  background-color: #42032C;
+
 }
 
-.header {
-  background-color: black;
-  padding: 0% 5%;
-  width: 100%;
-  height: 15%;
+#header {
+  transition: all 0.5s;
+  padding: 15px;
+  position: absolute;
+  top: 25%;
+
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.nav-menu a {
   display: flex;
-  box-sizing: border-box;
-
-
-}
-
-.nav .logo {
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0% 5%;
-}
-
-.nav {
-  display: flex;
-  width: 100%;
   align-items: center;
-
-
-
-}
-
-.nav a {
+  color: #45505b;
+  padding: 10px 18px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+  border-radius: 50px;
+  background:white;
+  height: 30px;
   text-decoration: none;
-  color: white;
-  width: 100%;
-  padding: 0% 5%;
-  font-weight: 600;
+
+
 }
+
+.nav-menu a i {
+  font-size: 20px;
+  color: black;
+
+
+}
+
+.nav-menu a span {
+  padding: 0px 20px;
+  font-weight: 600;
+
+
+
+}
+
+
+
+
+.nav-menu .active,
+.nav-menu li:hover a {
+  background: gold;
+}
+
+
+
+
+.nav-menu li:hover a {
+  width: 60%;
+  color: #fff;
+}
+
+
+.nav-menu li:hover a span {
+  display: block;
+}
+
+
 
 
 .utama {
+  width: 80%;
+  height: 80%;
+  /* background-color: #420303; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
-  justify-content: center;
-  background-color: #000000;
-  width: 100%;
-  height: 100%;
   align-items: center;
-  padding: 0% 5%;
-  box-sizing: border-box;
-
-  padding-bottom: 10%;
-
 }
-
-.konten-utama h1 {
-  color: #FFC600;
-  font-size: 8rem;
-
-}
-
-.konten-utama p {
+.konten-utama{
   color: white;
-  width: 70%;
-}
-
-.utama img {
-  width: 40%;
-
-
-}
-
-.service {
-  width: 100%;
-  height: 100%;
-  background-color: b;
-
-}
-
-.card {
   display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  justify-content: center;
-  gap: 5%;
-
+  gap: 20%;
+  /* background-color: green; */
 
 }
+.konten-utama h1{
+  font-size: 4rem;
+  margin-top: 6%;
+}
 
-.card-konten {
-  margin-top: 5%;
-  width: 20%;
-  height: 50%;
-  background-color: #FFC600;
-  text-align: center;
-  border-radius: 5px;
+.konten-utama img{
+  width: 30%;
+
+  /* background-color: red; */
+}
+.saya{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1% 1%;
-  box-sizing: border-box;
-
-
-
-}
-
-.card-konten:hover {
-
-
-  box-shadow: 0px 0px 20px #ffd000;
-
-}
-
-
-.card-konten h1 {
-  color: black;
-  font-size: 3rem;
-}
-.card-konten .pesan{
-  background-color:green;
-  width: 50%;
-  height: 10%;
-  border-radius: 5px;
- display: flex;
- justify-content: center;
- align-items: center;
-margin-top: 25%;
-
-}
-.card-konten .pesan a{
-  text-decoration: none;
-  font-weight: 500;
+  font-size: 2rem;
+  gap: 2%;
+  width: 25%;
+  position: absolute;
+  left: 0%;
+  display: flex;
   color: white;
+
+}
+.saya span{
+  color:gold;
 }
 
 
-/* RESPONSIVE */
-@media screen and (max-width:768px) {
+/* responsive destop */
 
-  .header {
+@media (min-width: 992px) {
 
-    height: 5%;
+  .nav-menu a {
+    width: 20px;
   }
 
-  .nav {
-    justify-content: center;
+  .nav-menu a span {
+    display: none;
+    color: black;
   }
 
-  .nav a {
-    color: white;
-    font-size: 9px;
-    text-align: center;
-    padding: 0;
-    width: 15%;
-    font-weight: 600;
 
 
+}
+
+
+
+/* responsive hp */
+@media (max-width: 992px) {
+
+  .nav-menu a {
+    width: 20px;
   }
 
-  .nav .logo {
-    font-size: 1.5rem;
-    margin-right: 8%;
+  .nav-menu a span {
+    display: none;
+    color: black;
   }
 
-  .utama {
-    background-color: black;
-    padding: 0% 20%;
-    padding-bottom: 500px;
-
-
+  .konten-utama h1{
+    font-size: 2rem;
+    width: 650px;
+    margin-top: 6%;
   }
 
-  .konten-utama h1 {
-    color: #FFC600;
-    font-size: 3rem;
-
+  .saya{
+    font-size: 1rem;
+    padding: 0% 6%;
+    width: 500px;
+    box-sizing: border-box;
+  
+  
+  
   }
-
-  .konten-utama p {
-    color: white;
-    width: 90%;
-    font-size: .6rem;
-  }
-
-  .utama img {
-    width: 70%;
-
-  }
-
-  .card {
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-    height: 1000px;
+  .utama{
     padding: 0% 5%;
     box-sizing: border-box;
-
   }
 
-  .card-konten {
-    width: 80%;
-    height: 30%;
-    padding: 0% 2%;
-  }
-  .card-konten:hover {
-    box-shadow: 0px 0px 20px #ffd000;
-  }
-
-  .service {
-    background-color:black;
-    height: 200vh;
-  }
 }
