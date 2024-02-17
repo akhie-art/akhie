@@ -87,13 +87,13 @@ body {
 .utama {
   width: 80%;
   height: 80%;
-  /* background-color: #420303; */
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .konten-utama{
   color: white;
@@ -107,18 +107,14 @@ body {
   margin-top: 6%;
 }
 
-.konten-utama img{
-  width: 30%;
 
-  /* background-color: red; */
-}
 .saya{
   display: flex;
   font-size: 2rem;
   gap: 2%;
   width: 25%;
   position: absolute;
-  left: 0%;
+ top: 60%;
   display: flex;
   color: white;
  align-items: center;
