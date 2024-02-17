@@ -195,7 +195,7 @@ body {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    top: 55%;
+    top: 60%;
    
   }
   .saya span{
@@ -206,7 +206,6 @@ body {
   .utama{
     justify-content: center;
     display: flex;
-
     margin: 0% 10%;
 
  
